@@ -16,9 +16,9 @@ export class Device {
   @Column()
   name: string;
 
-  @CreateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
-  creatAt: Date;
+  @CreateDateColumn({ type: 'timestamp' })
+  creatAt: string;
 
-  @UpdateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
-  updateAt: Date;
+  @UpdateDateColumn({ type: 'timestamp' })
+  updateAt: string;
 }
